@@ -17,22 +17,27 @@ End-to-end, modular ML pipeline that compares **passive** (wearable-only) and **
 ```
 .
 ├── src/
-│   ├── config.py          # centralised run/config knobs (seeds, paths, windows, thresholds)
-│   ├── data_io.py         # loading, caching, basic cleaning
-│   ├── temporal.py        # rolling windows, lookback/horizon utilities
-│   ├── features.py        # wearable/active feature engineering (HR/HRV, usage bins, aggregates)
-│   ├── outcomes.py        # outcome labelling, buffers, target definitions
-│   ├── splits.py          # subject-level / temporal splits; train/val/test utilities
-│   ├── models.py          # training/eval loops (e.g., XGB, LR), metrics
-│   ├── reporting.py       # tables/summary assembly
+│   ├── config.py
+│   ├── data_io.py
+│   ├── temporal.py
+│   ├── features.py
+│   ├── outcomes.py
+│   ├── splits.py
+│   ├── models.py
+│   ├── reporting.py
 │   └── viz/
-│       ├── bars.py        # grouped bar charts (sensitivity analyses etc.)
-│       ├── curves.py      # ROC/PR curves
-│       ├── events.py      # timeline/event plots
-│       ├── shap.py        # SHAP explanations
-│       └── html.py        # helpers for HTML outputs
-├── asthma_exacerbation_wearables.ipynb  # main, modularised analysis
-├── index.html                            # case-study summary (rendered notebook)
+│       ├── bars.py
+│       ├── curves.py
+│       ├── events.py
+│       ├── shap.py
+│       └── html.py
+├── figures/
+│   ├── active_xgb_roc.png
+│   ├── passive_xgb_roc.png
+│   ├── active_shap.png
+│   └── passive_shap.png
+├── asthma_exacerbation_wearables.ipynb
+├── index.html
 ├── requirements.txt
 ├── .gitignore
 ├── LICENSE
