@@ -2,7 +2,7 @@
 
 End-to-end, modular ML pipeline that compares **passive** (wearable-only) and **active** (wearable + patient-reported/inhaler) feature sets to predict impending asthma exacerbations. The repository contains a reproducible notebook, a small utilities package in `src/`, plotting helpers under `src/viz/`, and an HTML case-study summary.
 
-- 📄 **Dissertation report** (companion): see repository files (PDF not committed by default).
+- 📄 **Dissertation report** available upon request.
 - 🧪 **Notebook**: `asthma_exacerbation_wearables.ipynb`
 - 🌐 **HTML case study**:
   - Direct (relative): [index.html](index.html)
