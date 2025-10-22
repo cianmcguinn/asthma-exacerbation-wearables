@@ -153,10 +153,3 @@ See [`requirements.txt`](requirements.txt). Typical stack: Python 3.10+, pandas,
 This project is released under the license in [`LICENSE`](LICENSE).
 
 ---
-
-## Citation
-
-If you reference this work in academic or technical writing, please cite the accompanying dissertation/report (filename in the repo root).
-
-[README (1).md](https://github.com/user-attachments/files/23053117/README.1.md)
-
