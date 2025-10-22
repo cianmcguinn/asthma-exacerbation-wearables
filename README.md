@@ -115,6 +115,20 @@ Open `asthma_exacerbation_wearables.ipynb` and run top-to-bottom. The notebook u
 
 ---
 
+## Example Outputs
+
+| Active XGBoost (Questionnaire Data) | Passive XGBoost (Heart Rate Data) |
+|:----------------------------------:|:---------------------------------:|
+| ![Active ROC](figures/active_xgb_roc.png) | ![Passive ROC](figures/passive_xgb_roc.png) |
+
+| Active Model — SHAP Summary | Passive Model — SHAP Summary |
+|:----------------------------:|:-----------------------------:|
+| ![Active SHAP](figures/active_shap.png) | ![Passive SHAP](figures/passive_shap.png) |
+
+> The ROC curves show the discriminative ability of each model (AUROC 0.841 for active, 0.756 for passive).  
+> SHAP summary plots highlight the most influential predictors in each case — reliever use and night-time symptoms in active models; HR variability and circadian HR measures in passive models.
+
+
 ## How to extend
 
 - **Add features**: implement in `features.py`, register in the feature set builder.
